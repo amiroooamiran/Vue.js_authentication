@@ -16,6 +16,13 @@ export default createStore({
         state.isAuthenticated = false;
       }
     },
+    setToken(state, data) {
+      state.token = data.token;
+      state.user_id = data.user_id;
+      localStorage.setItem('token', data.token);
+      localStorage.setItem('user_id', data.user_id);
+      state.isAuthenticated = true;
+    },
   },
   actions: {
   },
