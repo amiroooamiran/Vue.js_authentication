@@ -34,6 +34,9 @@
                     <div class="row gy-3 overflow-hidden">
                         <div class="col-12">
                         <div class="form-floating mb-3 text-start">
+                            <small v-if="errors.wrong_credentials" class="text-danger">{{ errors.wrong_credentials }}</small>
+                        </div>
+                        <div class="form-floating mb-3 text-start">
                             <input type="username" class="form-control" name="username" id="email" placeholder="name@example.com" v-model="username">
                             <label for="email" class="form-label">Username</label>
                             <small v-if="errors.username" class="text-danger">{{ errors.username }}</small>
@@ -96,6 +99,8 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: 'Login',
   data() {
@@ -133,10 +138,19 @@ export default {
     },
     submitForm() {
         if(this.isValidForm()){
-            console.log('login')
-        }
-        else{
-            console.log('form no valid')
+            const url = '/login/';
+            axios.post(url, {username: this.username, password: this.password})
+            .then(response =>{
+                console.log(response.data);
+            })
+            .catch(error => {
+                if(error.response.data.non_field_errors) {
+                    this.errors.wrong_credentials = error.response.data.non_field_errors.join('');
+                }
+                else{
+                    this.errors.wrong_credentials = "";
+                }
+            })
         }
     }
   }
