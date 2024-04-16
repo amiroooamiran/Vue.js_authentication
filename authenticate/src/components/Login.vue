@@ -141,7 +141,9 @@ export default {
             const url = '/login/';
             axios.post(url, {username: this.username, password: this.password})
             .then(response =>{
-                console.log(response.data);
+                this.$store.commit('setToken', response.data);
+                this.username = "";
+                this.password = "";
             })
             .catch(error => {
                 if(error.response.data.non_field_errors) {
