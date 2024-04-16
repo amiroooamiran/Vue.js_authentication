@@ -23,6 +23,13 @@ export default createStore({
       localStorage.setItem('user_id', data.user_id);
       state.isAuthenticated = true;
     },
+    removeToken(state) {
+      state.token = "";
+      state.user_id = "";
+      localStorage.removeItem('token'); // <-- Fixed removing localStorage items
+      localStorage.removeItem('user_id'); // <-- Fixed removing localStorage items
+      state.isAuthenticated = false; // <-- Added to reset isAuthenticated
+    }
   },
   actions: {
   },
