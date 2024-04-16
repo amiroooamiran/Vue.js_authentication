@@ -17,6 +17,16 @@
   <router-view/>
 </template>
 
+<script>
+export default{
+  mounted(){
+    this.$store.commit('initializeStore');
+    console.log(this.$store.state.isAuthenticated);
+
+  }
+}
+</script>
+
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
