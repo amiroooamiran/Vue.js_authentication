@@ -24,7 +24,7 @@
                     <div class="col-12">
                         <div class="mb-4">
                         <h3>Sign in</h3>
-                        <p>Don't have an account? <a href="#!">Sign up</a></p>
+                        <p>Don't have an account? <router-link to="/singup">Click</router-link></p>
                         </div>
                     </div>
                     </div>
