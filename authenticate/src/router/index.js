@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import SingupView from '@/views/SingupView.vue'
+import ProfileView from '@/views/ProfileView.vue'
 
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     path: '/singup',
     name: 'singup',
     component: SingupView
+  },
+  {
+    path: '/profile',
+    name: 'profile',
+    component: ProfileView
   },
 ]
 
