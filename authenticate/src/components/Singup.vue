@@ -49,14 +49,14 @@
                         </div>
                         <div class="col-12">
                         <div class="form-floating mb-3 text-start">
-                            <input type="password" class="form-control" name="password" id="password" value="" placeholder="Password confirm " v-model="password">
+                            <input type="password" class="form-control" name="password" id="password"  placeholder="Password confirm " v-model="password">
                             <label for="password" class="form-label">Password confirm</label>
                             <small v-if="errors.password" class="text-danger">{{ errors.password }}</small>
                         </div>
                         </div>
                         <div class="col-12">
                         <div class="form-floating mb-3 text-start">
-                            <input type="password" class="form-control" name="password2" id="password2" value="" placeholder="Password" v-model="password2">
+                            <input type="password" class="form-control" name="password2" id="password2"  placeholder="Password" v-model="password2">
                             <label for="password" class="form-label">Password</label>
                             <small v-if="errors.password2" class="text-danger">{{ errors.password2 }}</small>
                         </div>
@@ -167,7 +167,7 @@ export default {
     },
     submitForm() {
         if (this.isValidForm()) {
-            const url = '/auth/users/';
+            const url = '/register/';
             // Include email and username in the data object
             const userData = {
                 email: this.email,

@@ -44,7 +44,7 @@
                         </div>
                         <div class="col-12">
                         <div class="form-floating mb-3 text-start">
-                            <input type="password" class="form-control" name="password" id="password" value="" placeholder="Password" v-model="password">
+                            <input type="password" class="form-control" name="password" id="password"  placeholder="Password" v-model="password">
                             <label for="password" class="form-label">Password</label>
                             <small v-if="errors.password" class="text-danger">{{ errors.password }}</small>
                         </div>
@@ -141,6 +141,7 @@ export default {
             const url = '/login/';
             axios.post(url, {username: this.username, password: this.password})
             .then(response =>{
+                this.$router.push('/profile')
                 this.$store.commit('setToken', response.data);
                 this.username = "";
                 this.password = "";
