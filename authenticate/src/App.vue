@@ -38,5 +38,11 @@ export default{
   background-color: #1f1f1f;
   position: relative;   justify-content: center; align-items: center;
 }
+@media only screen and (max-width: 600px){
+  #app{
+    height: 100%;
+    background-size: 100% 100%;
+  }
+}
 
 </style>
