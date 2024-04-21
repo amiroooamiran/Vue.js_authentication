@@ -4,15 +4,39 @@
             <div class="col-12 col-md-6 col-xl-7">
                 <div class="d-flex justify-content-center">
                 <div class="col-12 col-xl-9">
-                    <h1 class="text-start">username: </h1>
+                    <h1>Welcome to Authentication</h1>
                     <hr class="border-primary-subtle mb-4">
-                    <h2 class="h1 mb-4">Welcome To amiroo project </h2>
-                    <p class="lead mb-5">We write words, take photos, make videos, and interact with artificial intelligence.</p>
+                    <p class="lead mb-5">
+                        Thank you for using our authentication system. We're dedicated to providing secure and reliable solutions for your authentication needs.
+
+                        If you find this project useful, please consider visiting our GitHub repository for more information and updates. You can find us at <a href="https://github.com/amiroooamiran">GitHub</a>. <br>
+
+                        <hr>
+
+                        As the creator of this project, I'm committed to its ongoing development and improvement. If you require the expertise of a senior programmer for your projects, I would be delighted to collaborate with you. Feel free to reach out for any inquiries or potential collaborations.
+                        <br>
+                    </p>
+                    <div class="text-start">Thank you for choosing Authentication Project!</div>
+
                     <div class="text-endx">
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-grip-horizontal" viewBox="0 0 16 16">
                         <path d="M2 8a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm0-3a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm3 3a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm0-3a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm3 3a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm0-3a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm3 3a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm0-3a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm3 3a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm0-3a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
                     </svg>
                     </div>
+                    <div class="d-flex bg-white py-1 justify-content-center align-items-center">
+                        <div class="d-flex justify-content-between" style="width: 250px;">
+                            <a href="https://twitter.com/amirhos_amiran" target="_blank" class="text-decoration-none">
+                                <img src="https://img.icons8.com/color/48/twitterx--v1.png" alt="Twitter Icon" width="48" height="48">
+                            </a>
+                            <a href="https://github.com/amiroooamiran" target="_blank" class="text-decoration-none">
+                                <img src="https://img.icons8.com/glyph-neue/48/000000/github.png" alt="GitHub Icon" width="48" height="48">
+                            </a>
+                            <a href="https://mastodon.social/@amiroamiran" target="_blank" class="text-decoration-none">
+                                <img src="https://img.icons8.com/windows/48/mastodon.png" alt="Mastodon Icon" width="48" height="48">
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
                 </div>
             </div>
