@@ -86,7 +86,7 @@
                     <div class="row">
                     <div class="col-12">
                         <div class="d-flex gap-2 gap-md-4 flex-column flex-md-row justify-content-md-end mt-4">
-                        <a href="#!">Forgot password</a>
+                            <router-link to="/reset_password">Forgot password</router-link>
                         </div>
                     </div>
                     </div>
