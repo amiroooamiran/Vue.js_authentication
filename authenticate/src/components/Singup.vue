@@ -72,6 +72,9 @@
                         </div>
                         </div>
                         <div class="col-12">
+                            <div class="text-start">
+                                <span class="text-muted" style="font-size: small;">Accepted password: A-a, @#, 123</span>
+                            </div>
                         <div class="form-floating mb-3 text-start">
                             <input type="password" class="form-control" name="password" id="password"  placeholder="Password confirm " v-model="password">
                             <label for="password" class="form-label">Password confirm</label>
@@ -95,13 +98,6 @@
                     </div>
                     
                     </form>
-                    <div class="row">
-                    <div class="col-12">
-                        <div class="d-flex gap-2 gap-md-4 flex-column flex-md-row justify-content-md-end mt-4">
-                        <a href="#!">Forgot password</a>
-                        </div>
-                    </div>
-                    </div>
                     <hr>
                     <div class="row">
                     <div class="col-12">
