@@ -1,6 +1,7 @@
 
 <h1>Authentication Frontend <img src="https://img.shields.io/badge/License-GNU%20v3-blue.svg"> </h1></h1>
 
+<img src="/images/1.png" />
 <p align="center" >Welcome to the Authentication Frontend project! This Vue.js project serves as the frontend interface for interacting with our backend authentication APIs. Below, you'll find information on how to set up and run the frontend application.</p>
 <p align="center">
     <img src="https://img.shields.io/badge/Node.js-v16.14.0-green.svg?logo=node.js&logoColor=white">
