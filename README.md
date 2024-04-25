@@ -60,5 +60,25 @@ axios.defaults.baseURL = "http://localhost:8000";</code></pre>
 <h3>Run the Project</h3>
 <pre><code>npm run serve</code></pre>
 
+
+<h2>Docker Support</h2>
+
+<p>The project includes a Dockerfile, facilitating the deployment of the application within Docker containers. This simplifies the deployment process and ensures consistent behavior across various environments.</p>
+
+<h3>Run</h3>
+<p>Before running the application with Docker, ensure that Docker and docker-compose are installed on your system. If not, you can install them by following the <a href="https://docs.docker.com/manuals/">official documentation</a>.</p>
+
+<p>To start Docker, use the following commands:</p>
+
+```
+sudo systemctl start docker
+sudo systemctl enable docker
+```
+<p>after install Docker and Run docker on your ststem, move in project directory and up docker-compose file:</p>
+
+```
+sudo docker-compose up
+```
+
 <h2>Thank You!</h2>
 <p>Thank you for choosing our Authentication Frontend project! If you have any questions or need further assistance, please don't hesitate to contact us. We're here to help ensure your experience with our project is smooth and successful.</p>
